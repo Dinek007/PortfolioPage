@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Damian Wilk</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        color: rgb(170, 170, 170);
+        background-color: black;
+        /* -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; */
+      }
+
+      .star-container {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        top: 0px;
+        left: 50%;
+        z-index: -1;
+      }
+
+      .star {
+        position: relative;
+        top: 0px;
+        width: 10px;
+        height: 10px;
+        background: #ff99ff;
+        transform: rotate(45deg);
+        border-radius: 100px;
+        box-shadow: 0px 0px 50px 10px #ff99ff;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const numStars = 3;
+
+      const getRandomNumber = (min, max) => {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      };
+
+      const createStar = () => {
+        let trailTop = -11;
+        let trailLeft = 9;
+        let trailOpacity = 100;
+        let trailArr = [];
+        const trailLong = 100;
+        for (i = 0; i < trailLong; i++) {
+          const trail = document.createElement("div");
+          trail.style.position = "relative";
+          trail.style.top = `${trailTop - i * 3}px`;
+          trail.style.left = `${trailLeft + i}px`;
+          trail.style.background = "#ff99ff";
+          trail.style.width = "2px";
+          trail.style.height = "2px";
+          trail.style.opacity = `${trailOpacity - i / 1}%`;
+          trailArr.push(trail);
+        }
+
+        let top = 0;
+        let left = getRandomNumber(
+          window.innerWidth / 5,
+          window.innerWidth + window.innerWidth / 3
+        );
+        const starContainer = document.createElement("div");
+        starContainer.className = "star-container";
+        starContainer.style.left = `${left}px`;
+
+        const star = document.createElement("div");
+        star.className = "star";
+        starContainer.appendChild(star);
+        trailArr.forEach((trail) => {
+          starContainer.appendChild(trail);
+        });
+        document.body.appendChild(starContainer);
+
+        let intervalSpeed = getRandomNumber(20, 40);
+
+        const starFalling = setInterval(() => {
+          top+= 2;
+          left-= 2;
+          starContainer.style.top = `${top}px`;
+          starContainer.style.left = `${left}px`;
+
+          if (top > window.innerHeight + 200) {
+            document.body.removeChild(starContainer);
+            clearInterval(starFalling);
+          }
+
+          if (top === Math.floor(window.innerHeight / 2) || top === Math.floor(window.innerHeight / 2)+1) {
+            createStar();
+          }
+        }, intervalSpeed);
+      };
+
+      const appendStars = async () => {
+        const delay = (ms) => new Promise((res) => setTimeout(res, ms));
+        createStar();
+        await delay(2000);
+        createStar();
+      };
+      appendStars();
+    </script>
+
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
