@@ -1,5 +1,11 @@
 
-import { BoxGeometry, Mesh, MeshBasicMaterial, TextureLoader } from "three";
+import {
+  BoxGeometry,
+  Mesh,
+  MeshBasicMaterial,
+  PlaneGeometry,
+  TextureLoader,
+} from "three";
 import { isMobile } from "react-device-detect";
 
 export const Cube: React.FC<{ src: string }> = ({ src }) => {
@@ -7,8 +13,8 @@ export const Cube: React.FC<{ src: string }> = ({ src }) => {
   const material = new MeshBasicMaterial({ map: texture });
   let geometry;
 
-  if (isMobile) {
-    geometry = new BoxGeometry(0.5, 0.5, 0.5);
+  if (!isMobile) {
+    geometry = new PlaneGeometry(1, 1);
   } else {
     geometry = new BoxGeometry(1, 1, 1);
   }
