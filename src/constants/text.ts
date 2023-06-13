@@ -31,42 +31,42 @@ export const enum ExpirienceBody {
 }
 
 export const enum SkillsNames {
-    js = "js",
-    ts = "ts",
-    three = "three",
-    react = "react",
-    node = "node",
-    redux = "redux",
-    reduxSaga= "reduxSaga",
-    materialUI= "materialUI",
-    html = "html",
-    css = "css",
-    git = "git",
-    electron = "electron"
+  javascript = "javascript",
+  ts = "ts",
+  three = "three",
+  react = "react",
+  nodejs = "nodejs",
+  redux = "redux",
+  reduxSaga = "reduxSaga",
+  materialUI = "materialUI",
+  html = "html",
+  css = "css",
+  git = "git",
+  electron = "electron",
 }
 
 export const enum LessSkillsNames {
-    firebase = "firebase",
-    netlify = "netlify",
-    libp2p = "libp2p",
-    orbitdb = "orbitdb",
-    swagger = "swagger",
-    chatGPT = "chatGPT"
+  firebase = "firebase",
+  netlify = "netlify",
+  libp2p = "libp2p",
+  orbitdb = "orbitdb",
+  swagger = "swagger",
+  chatGPT = "chatGPT",
 }
 
 export const enum SkillsNamesTitles {
-    js = "JavaScript is a high-level programming language commonly used for creating interactive web content and dynamic web applications.",
-    ts = "TypeScript is a typed superset of JavaScript that provides static typing, enabling developers to catch errors during development and enhance code scalability and maintainability.",
-    three = "Three.js is a JavaScript library that simplifies the creation of 3D computer graphics on the web, allowing developers to build interactive 3D visualizations and games.",
-    react = "React.js is a JavaScript library for building user interfaces, specifically for creating reusable UI components and efficiently updating the user interface based on changes in data.",
-    node = "Node.js is a JavaScript runtime environment that allows developers to run JavaScript code on the server-side, enabling server-side scripting and building scalable network applications.",
-    redux = "Redux is a predictable state container for JavaScript applications, providing a centralized state management solution that helps manage and update application state in a predictable manner.",
-    reduxSaga= "Redux Saga is a middleware library for Redux that helps manage side effects (such as asynchronous actions) in a more efficient and manageable way, using generators and allowing better control flow.",
-    materialUI= "MaterialUI is a popular UI component library for React applications that follows the Material Design guidelines, providing pre-built components and styles to create modern and visually appealing user interfaces.",
-    html = "HTML (Hypertext Markup Language) is the standard markup language for creating the structure and content of web pages, defining the elements and layout of a webpage.",
-    css = "CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation and formatting of HTML documents, allowing developers to control the visual appearance of web pages.",
-    git = "Git is a distributed version control system used for tracking changes in source code during software development, enabling collaboration among developers and facilitating code management.",
-    electron = "Electron is a framework for building cross-platform desktop applications using web technologies like HTML, CSS, and JavaScript, allowing developers to create desktop apps using familiar web development tools."
+  javascript = "JavaScript is a high-level programming language commonly used for creating interactive web content and dynamic web applications.",
+  ts = "TypeScript is a typed superset of JavaScript that provides static typing, enabling developers to catch errors during development and enhance code scalability and maintainability.",
+  three = "Three.js is a JavaScript library that simplifies the creation of 3D computer graphics on the web, allowing developers to build interactive 3D visualizations and games.",
+  react = "React.js is a JavaScript library for building user interfaces, specifically for creating reusable UI components and efficiently updating the user interface based on changes in data.",
+  nodejs = "Node.js is a JavaScript runtime environment that allows developers to run JavaScript code on the server-side, enabling server-side scripting and building scalable network applications.",
+  redux = "Redux is a predictable state container for JavaScript applications, providing a centralized state management solution that helps manage and update application state in a predictable manner.",
+  reduxSaga = "Redux Saga is a middleware library for Redux that helps manage side effects (such as asynchronous actions) in a more efficient and manageable way, using generators and allowing better control flow.",
+  materialUI = "MaterialUI is a popular UI component library for React applications that follows the Material Design guidelines, providing pre-built components and styles to create modern and visually appealing user interfaces.",
+  html = "HTML (Hypertext Markup Language) is the standard markup language for creating the structure and content of web pages, defining the elements and layout of a webpage.",
+  css = "CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation and formatting of HTML documents, allowing developers to control the visual appearance of web pages.",
+  git = "Git is a distributed version control system used for tracking changes in source code during software development, enabling collaboration among developers and facilitating code management.",
+  electron = "Electron is a framework for building cross-platform desktop applications using web technologies like HTML, CSS, and JavaScript, allowing developers to create desktop apps using familiar web development tools.",
 }
 
 export const enum projectsNames {

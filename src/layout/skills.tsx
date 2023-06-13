@@ -13,9 +13,9 @@ export const Skills = () => {
   const xxl = "xxl" as Breakpoint;
 
   const skillsArray = [
-    { name: SkillsNames.node, title: SkillsNamesTitles.node },
+    { name: SkillsNames.nodejs, title: SkillsNamesTitles.nodejs },
     { name: SkillsNames.electron, title: SkillsNamesTitles.electron },
-    { name: SkillsNames.js, title: SkillsNamesTitles.js },
+    { name: SkillsNames.javascript, title: SkillsNamesTitles.javascript },
     { name: SkillsNames.ts, title: SkillsNamesTitles.ts },
     { name: SkillsNames.react, title: SkillsNamesTitles.react },
     { name: SkillsNames.redux, title: SkillsNamesTitles.redux },
