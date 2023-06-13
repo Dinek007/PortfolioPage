@@ -35,7 +35,7 @@ export const AboutMe = () => {
             marginTop: "170px",
           },
           [theme.breakpoints.down("sm")]: {
-            marginTop: "120px",
+            marginTop: "130px",
           },
           [theme.breakpoints.up(xxl)]: {
             fontSize: "1.7rem",
