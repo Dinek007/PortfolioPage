@@ -72,16 +72,19 @@ export const Expirience = () => {
           justifyContent: "space-between",
           alignItems: "flex-end",
           width: "35vw",
-          height: "1000px",
+          height: "1250px",
           borderRight: `2px solid #aa77aa`,
           [theme.breakpoints.down("lg")]: {
             height: "1300px",
           },
           [theme.breakpoints.down("md")]: {
-            height: "1600px",
+            height: "1700px",
           },
           [theme.breakpoints.down("xs")]: {
             marginTop: "100px",
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "2200px",
           },
         }}
       >
@@ -178,15 +181,18 @@ export const Expirience = () => {
           justifyContent: "space-between",
           alignItems: "flex-start",
           width: "50vw",
-          height: "1000px",
+          height: "1250px",
           [theme.breakpoints.down("lg")]: {
             height: "1300px",
           },
           [theme.breakpoints.down("md")]: {
-            height: "1600px",
+            height: "1700px",
           },
           [theme.breakpoints.down("xs")]: {
             marginTop: "100px",
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "2200px",
           },
         }}
       >
