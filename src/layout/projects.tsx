@@ -1,25 +1,22 @@
-import { IconButton, Typography, useTheme } from "@mui/material";
-import { Box } from "@mui/system";
+import { Typography, useTheme } from "@mui/material";
+import { Box, Breakpoint } from "@mui/system";
 import {
-  projectLinks,
   projectsDescription,
   projectsNames,
   projectsTechnologies,
 } from "../constants/text";
 import { Tilt } from "react-tilt";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LaunchIcon from "@mui/icons-material/Launch";
-import { Link } from "react-router-dom";
 
-import portfolioPic from "/projectsPictures/portfolio.png";
-import worldOfNotesPic from "/projectsPictures/worldOfNotes.png";
-import pokerPic from "/projectsPictures/poker.png";
-import shopAppPic from "/projectsPictures/shopApp.png";
-import quietPic from "/projectsPictures/quiet.png";
+import portfolioPic from "../assets/projectsPictures/portfolio.png";
+import worldOfNotesPic from "../assets/projectsPictures/worldOfNotes.png";
+import pokerPic from "../assets/projectsPictures/poker.png";
+import shopAppPic from "../assets/projectsPictures/shopApp.png";
+import quietPic from "../assets/projectsPictures/quiet.png";
 import { ProjectLinks } from "../components/projectLinks";
 
 export const Projects = () => {
   const theme = useTheme();
+  const xxl = "xxl" as Breakpoint;
 
   const projectsNamesArray = [
     {
@@ -99,66 +96,62 @@ export const Projects = () => {
       >
         {projectsNamesArray.map((item) => {
           return (
-              <Tilt>
+            <Tilt>
+              <Box
+                sx={{
+                  position: "relative",
+                  display: "flex",
+                  flexDirection: "column",
+                  padding: "20px",
+                  width: "450px",
+                  id: { item },
+                  margin: "50px",
+                  backgroundColor: "rgb(10,10,10)",
+                  borderRadius: "5px",
+                  boxShadow: `-1px -1px 4px 1px ${theme.palette.background.paper}, 1px 1px 4px 1px #007733`,
+                  [theme.breakpoints.down("sm")]: {
+                    width: "350px",
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    width: "300px",
+                  },
+                  [theme.breakpoints.up(xxl)]: {
+                    width: "550px",
+                  },
+                }}
+              >
+                <Box>
+                  <Typography variant="h3" color={theme.palette.text.secondary}>
+                    {item.name}
+                  </Typography>
+
+                  <ProjectLinks name={item.name} />
+                </Box>
                 <Box
                   sx={{
-                    position: "relative",
-                    display: "flex",
-                    flexDirection: "column",
-                    padding: "20px",
-                    width: "450px",
-                    id: { item },
-                    margin: "50px",
-                    backgroundColor: "rgb(10,10,10)",
-                    borderRadius: "5px",
-                    boxShadow: `-1px -1px 4px 1px ${theme.palette.background.paper}, 1px 1px 4px 1px #007733`,
-                    [theme.breakpoints.down("sm")]: {
-                      width: "350px",
-                    },
-                    [theme.breakpoints.down("xs")]: {
-                      width: "300px",
-                    },
-                    [theme.breakpoints.up("xxl")]: {
-                      width: "550px",
-                    },
+                    paddingBottom: "5px",
+                    marginBottom: "20px",
                   }}
                 >
-                  <Box>
-                    <Typography
-                      variant="h3"
-                      color={theme.palette.text.secondary}
-                    >
-                      {item.name}
-                    </Typography>
-
-                    <ProjectLinks name={item.name} />
-                  </Box>
-                  <Box
-                    sx={{
-                      paddingBottom: "5px",
-                      marginBottom: "20px",
-                    }}
-                  >
-                    <Typography variant="h6" color={"#aaffaa"}>
-                      {item.technologies}
-                    </Typography>
-                  </Box>
-                  <img
-                    style={{
-                      float: "left",
-                      borderRadius: "15px",
-                      marginBottom: "15px",
-                    }}
-                    src={item.src}
-                    alt={item.name}
-                  />
-
-                  <Box>
-                    <Typography variant="h6"> {item.description} </Typography>
-                  </Box>
+                  <Typography variant="h6" color={"#aaffaa"}>
+                    {item.technologies}
+                  </Typography>
                 </Box>
+                <img
+                  style={{
+                    float: "left",
+                    borderRadius: "15px",
+                    marginBottom: "15px",
+                  }}
+                  src={item.src}
+                  alt={item.name}
+                />
 
-              </Tilt>
+                <Box>
+                  <Typography variant="h6"> {item.description} </Typography>
+                </Box>
+              </Box>
+            </Tilt>
           );
         })}
       </Box>

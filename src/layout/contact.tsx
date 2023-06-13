@@ -1,5 +1,5 @@
 import { Typography, useTheme } from "@mui/material";
-import { Box } from "@mui/system";
+import { Box, Breakpoint } from "@mui/system";
 import { contacts } from "../constants/text";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -9,6 +9,7 @@ import LaunchIcon from "@mui/icons-material/Launch";
 
 export const Contact = () => {
   const theme = useTheme();
+  const xxl = "xxl" as Breakpoint;
 
   const contactsArray = [
     { content: contacts.email, icon: EmailIcon, link: "" },
@@ -35,7 +36,6 @@ export const Contact = () => {
         display: "flex",
         justifyContent: "center",
         //backgroundColor: "rgb(20,20,20)",
-
       }}
     >
       <Box
@@ -72,11 +72,10 @@ export const Contact = () => {
             height: "450px",
             marginTop: "100px",
             padding: "20px",
-            left: "2vw"
+            left: "2vw",
           },
-          [theme.breakpoints.up("xxl")]: {
+          [theme.breakpoints.up(xxl)]: {
             marginBottom: "300px",
-          
           },
         }}
       >
@@ -99,25 +98,33 @@ export const Contact = () => {
                 sx={{
                   color: theme.palette.text.secondary,
                   marginRight: "30px",
-                  fontSize: "30px"
+                  fontSize: "30px",
                 }}
               />
 
-              <Typography sx={{
-                 [theme.breakpoints.down("sm")]: {
-                  fontSize: "0.9rem"
-                },
-              }} variant="h5"> {item.content}</Typography>
+              <Typography
+                sx={{
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "0.9rem",
+                  },
+                }}
+                variant="h5"
+              >
+                {" "}
+                {item.content}
+              </Typography>
 
               {item.link ? (
                 <a href={item.link} target="_blank" rel="noopener noreferrer">
-                  <LaunchIcon sx={{
-                    position: "relative",
-                    left: "10px",
-                    top: "2px",
-                    fontSize: "20px",
-                    color:"#aaffaa"
-                  }}/>
+                  <LaunchIcon
+                    sx={{
+                      position: "relative",
+                      left: "10px",
+                      top: "2px",
+                      fontSize: "20px",
+                      color: "#aaffaa",
+                    }}
+                  />
                 </a>
               ) : (
                 <></>

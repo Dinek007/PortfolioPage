@@ -1,5 +1,5 @@
 import { Typography, useTheme } from "@mui/material";
-import { Box } from "@mui/system";
+import { Box, Breakpoint } from "@mui/system";
 import { CubeScene } from "../three/cube/cubeScene";
 import {
   LessSkillsNames,
@@ -10,6 +10,7 @@ import { Tooltip } from "react-tooltip";
 
 export const Skills = () => {
   const theme = useTheme();
+  const xxl = "xxl" as Breakpoint;
 
   const skillsArray = [
     { name: SkillsNames.node, title: SkillsNamesTitles.node },
@@ -70,10 +71,9 @@ export const Skills = () => {
           [theme.breakpoints.down("sm")]: {
             paddingTop: "100px",
           },
-          [theme.breakpoints.up("xxl")]: {
+          [theme.breakpoints.up(xxl)]: {
             paddingBottom: "320px",
             paddingTop: "250px",
-
           },
         }}
       >
@@ -103,7 +103,7 @@ export const Skills = () => {
                   width: "130px",
                   height: "130px",
                 },
-                [theme.breakpoints.up("xxl")]: {
+                [theme.breakpoints.up(xxl)]: {
                   width: "330px",
                   height: "330px",
                 },

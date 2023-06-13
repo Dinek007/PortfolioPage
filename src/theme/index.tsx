@@ -42,10 +42,10 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
           md: 900,
           lg: 1200,
           xl: 1536,
-          xxl: 2150
+          xxl: 2150,
         },
       },
-    })
+    } as any)
   );
 
   return (

@@ -1,5 +1,5 @@
 import { Typography, useTheme } from "@mui/material";
-import { Box } from "@mui/system";
+import { Box, Breakpoint } from "@mui/system";
 import {
   ExpirienceTitles,
   ExpirienceBodyTitles,
@@ -13,6 +13,7 @@ import { useRef } from "react";
 
 export const Expirience = () => {
   const theme = useTheme();
+  const xxl = "xxl" as Breakpoint;
 
   const expirienceTitlesArray = [
     ExpirienceTitles.student1,
@@ -82,7 +83,6 @@ export const Expirience = () => {
           [theme.breakpoints.down("xs")]: {
             marginTop: "100px",
           },
-          
         }}
       >
         {expirienceTitlesArray.map((item) => {
@@ -114,7 +114,6 @@ export const Expirience = () => {
                         padding: "15px",
                         marginRight: "0px",
                       },
-          
                     }}
                   >
                     <Typography
@@ -147,9 +146,8 @@ export const Expirience = () => {
                     top: "-50px",
                     fontSize: "0.9rem",
                     width: "130px",
-                    border: "0px"
+                    border: "0px",
                   },
-                  
                 }}
               >
                 <TipsAndUpdatesIcon
@@ -226,7 +224,7 @@ export const Expirience = () => {
                       marginLeft: "25px",
                       padding: "15px",
                     },
-                    [theme.breakpoints.up("xxl")]: {
+                    [theme.breakpoints.up(xxl)]: {
                       width: "650px",
                     },
                   }}
@@ -258,7 +256,7 @@ export const Expirience = () => {
                         [theme.breakpoints.down("sm")]: {
                           fontSize: "0.9rem",
                         },
-                        [theme.breakpoints.up("xxl")]: {
+                        [theme.breakpoints.up(xxl)]: {
                           fontSize: "1.3rem",
                         },
                       }}
