@@ -88,49 +88,50 @@ export const enum projectsDescription {
 }
 
 export const enum projectsTechnologies {
-    Quiet= "#TypeScript #React.js #Electron #Redux #ReduxSaga #Libp2p #OrbitDB #Material-Ui",
-    WorldOfNotes="#TypeScript #React.js #Redux #Redux-Saga #Swagger #Netlify #Material-Ui",
-    ShipsGame = "#TypeScript #React.js #Three.js #Material-Ui",
-    PokerGame = "#JavaScript #React.js #Redux #Material-Ui",
-    ShopApp= '#TypeScript #React.js #Redux #Redux-Saga #FirebaseStorage #CloudFirestore #Material-Ui',
-    PortfolioPage= "#TypeScript #React.js #Three.js #Material-Ui"
+  Quiet = "#TypeScript #React.js #Electron #Redux #ReduxSaga #Libp2p #OrbitDB #MaterialUi",
+  WorldOfNotes = "#TypeScript #React.js #Redux #Redux-Saga #Swagger #Netlify #MaterialUi",
+  ShipsGame = "#TypeScript #React.js #Redux #Three.js #MaterialUi",
+  PokerGame = "#JavaScript #React.js #Redux #MaterialUi",
+  ShopApp = "#TypeScript #React.js #Redux #Redux-Saga #FirebaseStorage #CloudFirestore #MaterialUi",
+  PortfolioPage = "#TypeScript #React.js #Three.js #MaterialUi",
 }
 
 export const enum contacts {
-    email="damian.wilk991213@gmail.com",
-    linkedin="Damian Wilk",
-    github="Dinek007",
-    phone="+48 505 934 407",
+  email = "damian.wilk991213@gmail.com",
+  linkedin = "Damian Wilk",
+  github = "Dinek007",
+  phone = "+48 505 934 407",
 }
 
-export const projectLinks = [{
+export const projectLinks = [
+  {
     name: "Poker (old)",
     github: "https://github.com/Dinek007/Poker/tree/master/poker",
-    webPage: "https://poker-9cc0e.web.app/"
-},
-{
+    webPage: "https://poker-9cc0e.web.app/",
+  },
+  {
     name: "Quiet",
     github: "https://github.com/TryQuiet/quiet",
-    webPage: "https://tryquiet.org/#Downloads"
-},
-{
+    webPage: "https://tryquiet.org/#Downloads",
+  },
+  {
     name: "World Of Notes",
     github: "https://github.com/Dinek007/notes-web-app",
-    webPage: "https://main--world-of-notes-app.netlify.app/"
-},
-{
+    webPage: "https://main--world-of-notes-app.netlify.app/",
+  },
+  {
     name: "Ships",
-    github: "",
-    webPage: ""
-},
-{
+    github: "https://github.com/Dinek007/ShipsGame",
+    webPage: "https://main--shipsgame.netlify.app/",
+  },
+  {
     name: "Shop App (old)",
     github: "https://github.com/Dinek007/Shop_app",
-    webPage: "https://shop-fashion-mistery.web.app/"
-},
-{
+    webPage: "https://shop-fashion-mistery.web.app/",
+  },
+  {
     name: "Portfolio page",
-    github: "",
-    webPage: ""
-},
-]
+    github: "https://github.com/Dinek007/PortfolioPage",
+    webPage: "https://main--damianwilk-portfolio.netlify.app/",
+  },
+];
