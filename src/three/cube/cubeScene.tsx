@@ -12,9 +12,14 @@ export const CubeScene: React.FC<{ src: string }> = ({ src }) => {
       {/* <pointLight position={[0, 0, 2]} intensity={2} /> */}
       {!isMobile ? <CustomOrbitControls /> : <></>}
       {/* <axesHelper scale={3}/> */}
-      <Float speed={1} rotationIntensity={2} floatIntensity={1}>
+
+      {!isMobile ? (
+        <Float speed={1} rotationIntensity={2} floatIntensity={1}>
+          <Cube src={src} />
+        </Float>
+      ) : (
         <Cube src={src} />
-      </Float>
+      )}
     </Canvas>
   );
 };
