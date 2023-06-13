@@ -1,10 +1,10 @@
 
-import { BoxGeometry, Mesh, MeshStandardMaterial, TextureLoader } from 'three';
+import { BoxGeometry, Mesh, MeshBasicMaterial, TextureLoader } from "three";
 import { isMobile } from "react-device-detect";
 
 export const Cube: React.FC<{ src: string }> = ({ src }) => {
   const texture = new TextureLoader().load(src);
-  const material = new MeshStandardMaterial({ map: texture });
+  const material = new MeshBasicMaterial({ map: texture });
   let geometry;
 
   if (isMobile) {
