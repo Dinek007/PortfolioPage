@@ -51,12 +51,12 @@ export const Skills = () => {
     { name: SkillsNames.three, title: SkillsNamesTitles.three, src: threePic },
     { name: SkillsNames.git, title: SkillsNamesTitles.git, src: gitPic },
     { name: SkillsNames.html, title: SkillsNamesTitles.html, src: htmlPic },
-    // { name: SkillsNames.css, title: SkillsNamesTitles.css, src: cssPic },
-    // {
-    //   name: SkillsNames.materialUI,
-    //   title: SkillsNamesTitles.materialUI,
-    //   src: materialUIPic,
-    // },
+    { name: SkillsNames.css, title: SkillsNamesTitles.css, src: cssPic },
+    {
+      name: SkillsNames.materialUI,
+      title: SkillsNamesTitles.materialUI,
+      src: materialUIPic,
+    },
   ];
 
   const lessSkillsArray = [

@@ -1,10 +1,17 @@
 
 import { BoxGeometry, Mesh, MeshStandardMaterial, TextureLoader } from 'three';
+import { isMobile } from "react-device-detect";
 
-export const Cube: React.FC<{src:string}>  = ({src}) => {
-  //const texture = new TextureLoader().load(src);
-  const material = new MeshStandardMaterial({ color: 0xff00ff });
-  const geometry = new BoxGeometry(1, 1, 1);
+export const Cube: React.FC<{ src: string }> = ({ src }) => {
+  const texture = new TextureLoader().load(src);
+  const material = new MeshStandardMaterial({ map: texture });
+  let geometry;
+
+  if (isMobile) {
+    geometry = new BoxGeometry(0.5, 0.5, 0.5);
+  } else {
+    geometry = new BoxGeometry(1, 1, 1);
+  }
 
   return (
     <mesh
@@ -14,4 +21,4 @@ export const Cube: React.FC<{src:string}>  = ({src}) => {
       scale={3}
     />
   );
-}
+};
