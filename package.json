@@ -35,6 +35,7 @@
     "mui": "^0.0.1",
     "mui-rte": "^2.0.1",
     "react": "^18.0.0",
+    "react-device-detect": "^2.2.3",
     "react-dom": "^18.0.0",
     "react-draggable": "^4.4.5",
     "react-hook-form": "^7.39.4",
