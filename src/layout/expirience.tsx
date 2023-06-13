@@ -85,6 +85,7 @@ export const Expirience = () => {
           },
           [theme.breakpoints.down("sm")]: {
             height: "2200px",
+            borderRight: 0,
           },
         }}
       >
@@ -149,7 +150,7 @@ export const Expirience = () => {
                     top: "-50px",
                     fontSize: "0.9rem",
                     width: "130px",
-                    border: "0px",
+                    border: 0,
                   },
                 }}
               >
@@ -164,6 +165,9 @@ export const Expirience = () => {
                     padding: "4px",
                     fontSize: "40px",
                     boxShadow: `0px 0px 6px 2px ${theme.palette.background.paper}`,
+                    [theme.breakpoints.down("sm")]: {
+                      fontSize: "30px",
+                    },
                   }}
                 />
               </Box>
