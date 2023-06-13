@@ -15,9 +15,14 @@ export const Cube: React.FC<{ src: string }> = ({ src }) => {
 
   if (isMobile) {
     geometry = new PlaneGeometry(1, 1);
+    geometry.deleteAttribute("normal");
+    geometry.deleteAttribute("uv");
+    geometry.deleteAttribute("color");
   } else {
     geometry = new BoxGeometry(1, 1, 1);
   }
+
+
 
   return (
     <mesh
