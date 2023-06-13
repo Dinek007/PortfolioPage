@@ -1,5 +1,5 @@
 import { Typography, useTheme } from "@mui/material";
-import { Box, Breakpoint } from "@mui/system";
+import { Box, Breakpoint, width } from "@mui/system";
 import { CubeScene } from "../three/cube/cubeScene";
 import {
   LessSkillsNames,
@@ -19,6 +19,7 @@ import reduxSagaPic from "../assets/skillsTextures/reduxSaga.png";
 import threePic from "../assets/skillsTextures/three.png";
 import tsPic from "../assets/skillsTextures/ts.png";
 import reduxPic from "../assets/skillsTextures/redux.png";
+import { isMobile } from "react-device-detect";
 
 export const Skills = () => {
   const theme = useTheme();
@@ -142,7 +143,22 @@ export const Skills = () => {
                 },
               }}
             >
-              <CubeScene src={item.src} />
+              {!isMobile ? (
+                <CubeScene src={item.src} />
+              ) : (
+                <img
+                  style={{
+                    position: "relative",
+                    left: "50%",
+                    transform: "translate(-50%,0)",
+                    width: "90%",
+                    height: "90%",
+                  }}
+                  src={item.src}
+                  alt={item.name}
+                ></img>
+              )}
+
               <Tooltip
                 style={{
                   zIndex: 1000000000,
