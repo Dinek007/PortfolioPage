@@ -12,6 +12,8 @@ import worldOfNotesPic from "../assets/projectsPictures/worldOfNotes.png";
 import pokerPic from "../assets/projectsPictures/poker.png";
 import shopAppPic from "../assets/projectsPictures/shopApp.png";
 import quietPic from "../assets/projectsPictures/quiet.png";
+import shipsPic from "../assets/projectsPictures/ships.png";
+
 import { ProjectLinks } from "../components/projectLinks";
 
 export const Projects = () => {
@@ -35,7 +37,7 @@ export const Projects = () => {
       name: projectsNames.ShipsGame,
       description: projectsDescription.ShipsGame,
       technologies: projectsTechnologies.ShipsGame,
-      src: pokerPic,
+      src: shipsPic,
     },
     {
       name: projectsNames.PortfolioPage,
