@@ -13,7 +13,7 @@ export const Cube: React.FC<{ src: string }> = ({ src }) => {
   const material = new MeshBasicMaterial({ map: texture });
   let geometry;
 
-  if (!isMobile) {
+  if (isMobile) {
     geometry = new PlaneGeometry(1, 1);
   } else {
     geometry = new BoxGeometry(1, 1, 1);
