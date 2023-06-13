@@ -7,24 +7,56 @@ import {
   SkillsNamesTitles,
 } from "../constants/text";
 import { Tooltip } from "react-tooltip";
+import cssPic from "../assets/skillsTextures/css.png";
+import electronPic from "../assets/skillsTextures/electron.png";
+import gitPic from "../assets/skillsTextures/git.png";
+import htmlPic from "../assets/skillsTextures/html.png";
+import javascriptPic from "../assets/skillsTextures/javascript.png";
+import materialUIPic from "../assets/skillsTextures/materialUI.png";
+import nodejsPic from "../assets/skillsTextures/nodejs.png";
+import reactPic from "../assets/skillsTextures/react.png";
+import reduxSagaPic from "../assets/skillsTextures/reduxSaga.png";
+import threePic from "../assets/skillsTextures/three.png";
+import tsPic from "../assets/skillsTextures/ts.png";
+import reduxPic from "../assets/skillsTextures/redux.png";
 
 export const Skills = () => {
   const theme = useTheme();
   const xxl = "xxl" as Breakpoint;
 
   const skillsArray = [
-    { name: SkillsNames.nodejs, title: SkillsNamesTitles.nodejs },
-    { name: SkillsNames.electron, title: SkillsNamesTitles.electron },
-    { name: SkillsNames.javascript, title: SkillsNamesTitles.javascript },
-    { name: SkillsNames.ts, title: SkillsNamesTitles.ts },
-    { name: SkillsNames.react, title: SkillsNamesTitles.react },
-    { name: SkillsNames.redux, title: SkillsNamesTitles.redux },
-    { name: SkillsNames.reduxSaga, title: SkillsNamesTitles.reduxSaga },
-    { name: SkillsNames.three, title: SkillsNamesTitles.three },
-    { name: SkillsNames.git, title: SkillsNamesTitles.git },
-    { name: SkillsNames.html, title: SkillsNamesTitles.html },
-    { name: SkillsNames.css, title: SkillsNamesTitles.css },
-    { name: SkillsNames.materialUI, title: SkillsNamesTitles.materialUI },
+    {
+      name: SkillsNames.nodejs,
+      title: SkillsNamesTitles.nodejs,
+      src: nodejsPic,
+    },
+    {
+      name: SkillsNames.electron,
+      title: SkillsNamesTitles.electron,
+      src: electronPic,
+    },
+    {
+      name: SkillsNames.javascript,
+      title: SkillsNamesTitles.javascript,
+      src: javascriptPic,
+    },
+    { name: SkillsNames.ts, title: SkillsNamesTitles.ts, src: tsPic },
+    { name: SkillsNames.react, title: SkillsNamesTitles.react, src: reactPic },
+    { name: SkillsNames.redux, title: SkillsNamesTitles.redux, src: reduxPic },
+    {
+      name: SkillsNames.reduxSaga,
+      title: SkillsNamesTitles.reduxSaga,
+      src: reduxSagaPic,
+    },
+    { name: SkillsNames.three, title: SkillsNamesTitles.three, src: threePic },
+    { name: SkillsNames.git, title: SkillsNamesTitles.git, src: gitPic },
+    { name: SkillsNames.html, title: SkillsNamesTitles.html, src: htmlPic },
+    { name: SkillsNames.css, title: SkillsNamesTitles.css, src: cssPic },
+    {
+      name: SkillsNames.materialUI,
+      title: SkillsNamesTitles.materialUI,
+      src: materialUIPic,
+    },
   ];
 
   const lessSkillsArray = [
@@ -110,7 +142,7 @@ export const Skills = () => {
                 },
               }}
             >
-              <CubeScene src={item.name} />
+              <CubeScene src={item.src} />
               <Tooltip
                 style={{
                   zIndex: 1000000000,
