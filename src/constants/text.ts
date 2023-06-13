@@ -79,12 +79,12 @@ export const enum projectsNames {
 }
 
 export const enum projectsDescription {
-    Quiet= "aaa  aaaa dtgfhd aaaa aaaaa aaa aaaaa aaaaa aaaa aaaa aaaa dtgfhd thgdsrgh sd frghdr tsghd saaa aaaa aaaa aaaaa aaa aaaaa aaaaa aaaa aaaa aaaa dtgfhd thgdsrgh sd frghdr tsghd saaa aaaa aaaa aaaaa",
-    WorldOfNotes="a aaaa aaaaaa aaaa aaaa aaaaa aaa aaaaa aaaaa aaaa aaaa aaaa dtgfhd thgdsrgh sd frghdr tsghd saaa aaaa aaaa aaaaa aaa aaaaa aaaaa aaaa aaaa aaaa dtgfhd thgdsrgh sd frghdr tsghd saaa aaaa aaaa aaaaa",
-    ShipsGame = " aaaa aaaa d aaaa aaaa aaaaa aaa aaaaa aaaaa aaaa aaaa aaaa dtgfhd thgdsrgh sd frghdr tsghd saaa aaaa aaaa aaaaa aaa aaaaa aaaaa aaaa aaaa aaaa dtgfhd thgdsrgh sd frghdr tsghd saaa aaaa aaaa aaaaa",
-    PokerGame = " aaaa aaaa d aaaa aaaa aaaaa aaa aaaaa aaaaa aaaa aaaa aaaa dtgfhd thgdsrgh sd frghdr tsghd saaa aaaa aaaa aaaaa aaa aaaaa aaaaa aaaa aaaa aaaa dtgfhd thgdsrgh sd frghdr tsghd saaa aaaa aaaa aaaaa",
-    ShopApp= 'aaa aa aaaa dtgaaa aaaa aaaaa aaa aaaaa aaaaa aaaa aaaa aaaa dtgfhd thgdsrgh sd frghdr tsghd saaa aaaa aaaa aaaaa aaa aaaaa aaaaa aaaa aaaa aaaa dtgfhd thgdsrgh sd frghdr tsghd saaa aaaa aaaa aaaaa',
-    PortfolioPage= "aaa aaaa d saaa aaaa aaaa aaaaa aaa aaaaa aaaaa aaaa aaaa aaaa dtgfhd thgdsrgh sd frghdr tsghd saaa aaaa aaaa aaaaa aaa aaaaa aaaaa aaaa aaaa aaaa dtgfhd thgdsrgh sd frghdr tsghd saaa aaaa aaaa aaaaa"
+  Quiet = "Quiet is a desktop communicator based on the Tor network. It lets you control all your data without running your own servers. I worked on Quiet for 2 years, which was my first commercial project where I was part of a development team. I worked on tasks from every part of the project.",
+  WorldOfNotes = "Worlf Of Notes is a service for easy management and storage of notes. After creating an account, it allows users to access their notes on any device, wherever they are. Notes can be easily personalized by changing colors, adding lists, and moving them around a virtual 'fridge', etc. Users can also manage categories for their notes. Each note also has a reminder option, which will send the note to the accounts email address at the selected future time. This is a project that my friend and I created as part of our engineering thesis during our studies. I was responsible for the entire frontend part.",
+  ShipsGame = "Ships is a game based on the popular Battleship game. It features many three-dimensional models of ships, missiles, and rocket launchers. The objective of the game is to compete against an opponent (the computer), and the first person to hit all of the opponents ships wins.",
+  PortfolioPage = "Website utilizing 3D models, showcasing my projects and highlighting my experience.",
+  ShopApp = "Shopp app is one of my earlier applications where I delved into Redux. It presents a fictional online clothing store. The database is based on Firebase.",
+  PokerGame = "Game based on the card game of poker, involving betting on the winning hand in each round against an opponent (computer). This is one of my older projects created as a hobby, mainly serving as a sandbox for experimentation.",
 }
 
 export const enum projectsTechnologies {
