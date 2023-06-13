@@ -34,6 +34,9 @@ export const AboutMe = () => {
             minWidth: "89vw",
             marginTop: "170px",
           },
+          [theme.breakpoints.down("sm")]: {
+            marginTop: "120px",
+          },
           [theme.breakpoints.up(xxl)]: {
             fontSize: "1.7rem",
             marginTop: "450px",
