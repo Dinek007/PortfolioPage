@@ -96,7 +96,7 @@ export const Projects = () => {
       >
         {projectsNamesArray.map((item) => {
           return (
-            <Tilt>
+            <Tilt key={item.name}>
               <Box
                 sx={{
                   position: "relative",

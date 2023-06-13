@@ -7,9 +7,9 @@ export const enum HeaderSections {
 }
 
 export const enum ExpirienceTitles {
-    student1 ="02.02.2000 - 02.02.2000",
-    student2="02.02.2000 - 02.02.2000",
-    webDeveloper="02.02.2000 - 02.02.2000" 
+  student1 = "02.02.2001 - 02.02.2000",
+  student2 = "02.02.2002 - 02.02.2000",
+  webDeveloper = "02.02.2003 - 02.02.2000",
 }
 
 export const enum ExpirienceBodyTitles {

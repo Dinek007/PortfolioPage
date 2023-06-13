@@ -82,6 +82,7 @@ export const Contact = () => {
         {contactsArray.map((item) => {
           return (
             <Box
+              key={item.content}
               sx={{
                 width: "400px",
                 display: "flex",

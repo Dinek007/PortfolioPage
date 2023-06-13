@@ -81,6 +81,7 @@ export const Skills = () => {
           return (
             <Box
               id={item.name}
+              key={item.name}
               data-tooltip-id={item.name}
               data-tooltip-content={item.title}
               data-tooltip-variant="dark"

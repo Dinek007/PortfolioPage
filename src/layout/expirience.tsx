@@ -92,7 +92,7 @@ export const Expirience = () => {
             offset: ["start end", "start center"],
           });
           return (
-            <Box>
+            <Box key={item}>
               <motion.div style={{ opacity: scrollYProgress }}>
                 <Tilt>
                   <Box
@@ -197,7 +197,7 @@ export const Expirience = () => {
             offset: ["start end", "start center"],
           });
           return (
-            <motion.div style={{ opacity: scrollYProgress }}>
+            <motion.div style={{ opacity: scrollYProgress }} key={item.name}>
               <Tilt>
                 <Box
                   ref={ref}
