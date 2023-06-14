@@ -29,8 +29,8 @@ export const enum ExpirienceBodyNames {
 
 export const enum ExpirienceBody {
   student1 = "In high school, specializing in information technology, I started learning web programming and other languages like C++. That is when I first got to know the React framework and Typescript, and I did my first projects using them to pass my subjects.",
-  student2 = "At the pedagogical university, majoring in computer science, I continued to deepen my knowledge of programming. I expanded my knowledge in various areas, including low-level programming. From a theoretical perspective, I delved into various types of testing and got acquainted with new and interesting technologies for end-to-end testing.",
-  conference = "As a member of a team of four developers and together with the project founder, I participated in the New Hope conference. The project, on which I worked for two years, was presented during the event. We showcased the Quiet application live and in person in New York.",
+  student2 = "At the Pedagogical University, majoring in computer science, I continued to deepen my knowledge of programming. I expanded my knowledge in various areas, including low-level programming. From a theoretical perspective, I delved into various types of testing and got acquainted with new and interesting technologies for end-to-end testing.",
+  conference = "As a member of a team of four developers and together with the project founder, I participated in the New Hope conference. The project, on which I worked for two years, was presented during the event. We showcased the Quiet application live and in person in New York City.",
   webDeveloper = "At Rumble Fish company, I worked as one of the four full-stack developers in team, on the Quiet project for two years. Quiet is a desktop communicator that operates using the Tor network, without requiring a server and functioning solely in a peer-to-peer network. My tasks were diverse, ranging from frontend work to creating SSL certificate verification for WebSocket connections over Tor, etc.",
 }
 
