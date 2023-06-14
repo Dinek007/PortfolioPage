@@ -7,10 +7,10 @@ export const enum HeaderSections {
 }
 
 export const enum ExpirienceTitles {
-  student1 = "02.02.2001 - 02.02.2000",
-  student2 = "02.02.2002 - 02.02.2000",
-  webDeveloper = "02.02.2003 - 02.02.2000",
-  conference = "02.02.2004 - 02.02.2000",
+  student1 = "09.2015 - 05.2019",
+  student2 = "10.2019 - until now",
+  webDeveloper = "02.2021 - 01.2023",
+  conference = "22.07.2022 - 24.07.2022",
 }
 
 export const enum ExpirienceBodyTitles {
@@ -23,15 +23,15 @@ export const enum ExpirienceBodyTitles {
 export const enum ExpirienceBodyNames {
   student1 = "Upper Secondary School of Communications",
   student2 = "Pedagogical University",
-  conference = "Conference",
-  webDeveloper = "Rumble Fish",
+  conference = "A New Hope - Hackers On Planet Earth",
+  webDeveloper = "Rumble Fish Software Development",
 }
 
 export const enum ExpirienceBody {
   student1 = "In high school, specializing in information technology, I started learning web programming and other languages like C++. That is when I first got to know the React framework and Typescript, and I did my first projects using them to pass my subjects.",
   student2 = "At the pedagogical university, majoring in computer science, I continued to deepen my knowledge of programming. I expanded my knowledge in various areas, including low-level programming. From a theoretical perspective, I delved into various types of testing and got acquainted with new and interesting technologies for end-to-end testing.",
-  conference = "As a part of the development team, together with the project founder, I participated in the conference aaa in New York, where we presented the Quiet project.",
-  webDeveloper = "At Rumble Fish company, I worked as one of the four full-stack developers in team, on the Quiet project for two years. Quiet is a desktop communicator that operates using the Tor network, without requiring a server and functioning solely in a peer-to-peer network. My tasks were diverse, ranging from frontend work to creating SSL certificate verification for WebSocket connections over Tor.",
+  conference = "As a member of a team of four developers and together with the project founder, I participated in the New Hope conference. The project, on which I worked for two years, was presented during the event. We showcased the Quiet application live and in person in New York.",
+  webDeveloper = "At Rumble Fish company, I worked as one of the four full-stack developers in team, on the Quiet project for two years. Quiet is a desktop communicator that operates using the Tor network, without requiring a server and functioning solely in a peer-to-peer network. My tasks were diverse, ranging from frontend work to creating SSL certificate verification for WebSocket connections over Tor, etc.",
 }
 
 export const enum SkillsNames {
@@ -74,12 +74,12 @@ export const enum SkillsNamesTitles {
 }
 
 export const enum projectsNames {
-    Quiet= "Quiet",
-    WorldOfNotes="World Of Notes",
-    ShipsGame = "Ships",
-    PokerGame = "Poker (old)",
-    ShopApp= 'Shop App (old)',
-    PortfolioPage= "Portfolio page"
+  Quiet = "Quiet",
+  WorldOfNotes = "World Of Notes",
+  ShipsGame = "Ships",
+  PokerGame = "Poker (old)",
+  ShopApp = "Shop App (old)",
+  PortfolioPage = "Portfolio page",
 }
 
 export const enum projectsDescription {
@@ -137,5 +137,9 @@ export const projectLinks = [
     name: "Portfolio page",
     github: "https://github.com/Dinek007/PortfolioPage",
     webPage: "https://main--damianwilk-portfolio.netlify.app/",
+  },
+  {
+    name: "Conference",
+    webPage: "https://hope.net/index.html",
   },
 ];

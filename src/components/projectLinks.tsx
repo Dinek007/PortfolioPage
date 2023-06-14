@@ -22,23 +22,27 @@ export const ProjectLinks: React.FC<{ name: string }> = ({ name }) => {
         right: "5px",
       }}
     >
-      <a href={links.github} target="_blank" rel="noopener noreferrer">
-        <GitHubIcon
-          sx={{
-            fontSize: "28px",
-            color: theme.palette.text.secondary,
-            marginRight: "8px",
-          }}
-        />
-      </a>
-      <a href={links.webPage} target="_blank" rel="noopener noreferrer">
-        <LaunchIcon
-          sx={{
-            fontSize: "28px",
-            color: theme.palette.text.secondary,
-          }}
-        />
-      </a>
+      {links.github && (
+        <a href={links.github} target="_blank" rel="noopener noreferrer">
+          <GitHubIcon
+            sx={{
+              fontSize: "28px",
+              color: theme.palette.text.secondary,
+              marginRight: "8px",
+            }}
+          />
+        </a>
+      )}
+      {links.webPage && (
+        <a href={links.webPage} target="_blank" rel="noopener noreferrer">
+          <LaunchIcon
+            sx={{
+              fontSize: "28px",
+              color: theme.palette.text.secondary,
+            }}
+          />
+        </a>
+      )}
     </Box>
   );
 };
