@@ -3,6 +3,7 @@ import { Box, Breakpoint, width } from "@mui/system";
 import { CubeScene } from "../three/cube/cubeScene";
 import {
   LessSkillsNames,
+  LessSkillsNamesTitles,
   SkillsNames,
   SkillsNamesTitles,
 } from "../constants/text";
@@ -20,6 +21,15 @@ import threePic from "../assets/skillsTextures/three.png";
 import tsPic from "../assets/skillsTextures/ts.png";
 import reduxPic from "../assets/skillsTextures/redux.png";
 import { isMobile } from "react-device-detect";
+import chatGPTPic from "../assets/skillsTextures/chatGPT.png";
+import cppPic from "../assets/skillsTextures/cpp.png";
+import firebasePic from "../assets/skillsTextures/firebase.png";
+import jestPic from "../assets/skillsTextures/jest.png";
+import libp2pPic from "../assets/skillsTextures/libp2p.png";
+import netlifyPic from "../assets/skillsTextures/netlify.png";
+import reactTestingLibraryPic from "../assets/skillsTextures/reactTestingLibrary.png";
+import swaggerPic from "../assets/skillsTextures/swagger.png";
+import { Tilt } from "react-tilt";
 
 export const Skills: React.FC = () => {
   const theme = useTheme();
@@ -61,12 +71,46 @@ export const Skills: React.FC = () => {
   ];
 
   const lessSkillsArray = [
-    LessSkillsNames.chatGPT,
-    LessSkillsNames.firebase,
-    LessSkillsNames.netlify,
-    LessSkillsNames.orbitdb,
-    LessSkillsNames.libp2p,
-    LessSkillsNames.swagger,
+    {
+      name: LessSkillsNames.jest,
+      title: LessSkillsNamesTitles.jest,
+      src: jestPic,
+    },
+    {
+      name: LessSkillsNames.reactTestingLibrary,
+      title: LessSkillsNamesTitles.reactTestingLibrary,
+      src: reactTestingLibraryPic,
+    },
+    {
+      name: LessSkillsNames.chatGPT,
+      title: LessSkillsNamesTitles.chatGPT,
+      src: chatGPTPic,
+    },
+    {
+      name: LessSkillsNames.firebase,
+      title: LessSkillsNamesTitles.firebase,
+      src: firebasePic,
+    },
+    {
+      name: LessSkillsNames.netlify,
+      title: LessSkillsNamesTitles.netlify,
+      src: netlifyPic,
+    },
+    {
+      name: LessSkillsNames.libp2p,
+      title: LessSkillsNamesTitles.libp2p,
+      src: libp2pPic,
+    },
+    {
+      name: LessSkillsNames.swagger,
+      title: LessSkillsNamesTitles.swagger,
+      src: swaggerPic,
+    },
+    {
+      name: LessSkillsNames.cpp,
+      title: LessSkillsNamesTitles.cpp,
+      src: cppPic,
+    },
   ];
 
   return (
@@ -94,98 +138,192 @@ export const Skills: React.FC = () => {
       <Box
         sx={{
           display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
           justifyContent: "center",
+          flexDirection: "column",
           alignItems: "center",
-          alignContent: " center",
-          paddingTop: "200px",
-          paddingBottom: "200px",
-          [theme.breakpoints.down("sm")]: {
-            paddingTop: "100px",
-          },
-          [theme.breakpoints.up(xxl)]: {
-            paddingBottom: "320px",
-            paddingTop: "250px",
-          },
         }}
       >
-        {skillsArray.map((item) => {
-          return (
-            <Box
-              id={item.name}
-              key={item.name}
-              data-tooltip-id={item.name}
-              data-tooltip-content={item.title}
-              data-tooltip-variant="dark"
-              sx={{
-                width: "270px",
-                height: "270px",
-                [theme.breakpoints.down("lg")]: {
-                  width: "220px",
-                  height: "220px",
-                },
-                [theme.breakpoints.down("md")]: {
-                  width: "180px",
-                  height: "180px",
-                },
-                [theme.breakpoints.down("sm")]: {
-                  width: "150px",
-                  height: "150px",
-                },
-                [theme.breakpoints.down("xs")]: {
-                  width: "130px",
-                  height: "130px",
-                },
-                [theme.breakpoints.up(xxl)]: {
-                  width: "330px",
-                  height: "330px",
-                },
-              }}
-            >
-              {!isMobile ? (
-                <CubeScene src={item.src} />
-              ) : (
-                <img
-                  style={{
-                    position: "relative",
-                    left: "50%",
-                    transform: "translate(-50%,0)",
-                    width: "90%",
-                    height: "90%",
-                  }}
-                  src={item.src}
-                  alt={item.name}
-                ></img>
-              )}
-
-              <Tooltip
-                style={{
-                  zIndex: 1000000000,
-                  fontSize: 16,
-                  color: theme.palette.text.secondary,
-                  opacity: 100,
-                  maxWidth: "350px",
-                }}
-                classNameArrow="bottom"
-                id={item.name}
-              />
-            </Box>
-          );
-        })}
-
-        {/* {lessSkillsArray.map((item) => {
-          return(
-          <Box 
-                        id={item}
-
+        <Box
           sx={{
-            width: "100px",
-            height: "100px",
-          }}>
-            <CubeScene src={item} />
+            display: "flex",
+            flexDirection: "row",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            alignItems: "center",
+            alignContent: " center",
+            paddingTop: "200px",
+            [theme.breakpoints.down("sm")]: {
+              paddingTop: "100px",
+            },
+            [theme.breakpoints.up(xxl)]: {
+              paddingTop: "250px",
+            },
+          }}
+        >
+          {skillsArray.map((item) => {
+            return (
+              <Box
+                id={item.name}
+                key={item.name}
+                data-tooltip-id={item.name}
+                data-tooltip-content={item.title}
+                data-tooltip-variant="dark"
+                sx={{
+                  width: "270px",
+                  height: "270px",
+                  [theme.breakpoints.down("lg")]: {
+                    width: "220px",
+                    height: "220px",
+                  },
+                  [theme.breakpoints.down("md")]: {
+                    width: "180px",
+                    height: "180px",
+                  },
+                  [theme.breakpoints.down("sm")]: {
+                    width: "150px",
+                    height: "150px",
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    width: "130px",
+                    height: "130px",
+                  },
+                  [theme.breakpoints.up(xxl)]: {
+                    width: "330px",
+                    height: "330px",
+                  },
+                }}
+              >
+                {!isMobile ? (
+                  <CubeScene src={item.src} />
+                ) : (
+                  <img
+                    style={{
+                      position: "relative",
+                      left: "50%",
+                      transform: "translate(-50%,0)",
+                      width: "90%",
+                      height: "90%",
+                    }}
+                    src={item.src}
+                    alt={item.name}
+                  ></img>
+                )}
+
+                <Tooltip
+                  style={{
+                    zIndex: 1000000000,
+                    fontSize: 16,
+                    color: theme.palette.text.secondary,
+                    opacity: 100,
+                    maxWidth: "350px",
+                  }}
+                  classNameArrow="bottom"
+                  id={item.name}
+                />
+              </Box>
+            );
+          })}
+        </Box>
+
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            alignItems: "center",
+            alignContent: "center",
+            marginTop: "200px",
+            marginBottom: "200px",
+            backgroundColor: "rgb(10,10,10)",
+            borderRadius: "5px",
+            padding: "30px",
+            //boxShadow: `0px 0px 4px 1px ${theme.palette.background.paper}`,
+            [theme.breakpoints.down("sm")]: {
+              marginTop: "100px",
+            },
+            [theme.breakpoints.up(xxl)]: {
+              marginBottom: "320px",
+              marginTop: "250px",
+            },
+          }}
+        >
+          <Typography color={"#aaaaaa"} variant="h3">
+            Less Skills
+          </Typography>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              flexWrap: "wrap",
+              paddingTop: "15px",
+            }}
+          >
+            {lessSkillsArray.map((item) => {
+              return (
+                <>
+                  <Tilt>
+                    <Box
+                      id={item.name}
+                      key={item.name}
+                      data-tooltip-id={item.name}
+                      data-tooltip-content={item.title}
+                      data-tooltip-variant="dark"
+                      sx={{
+                        opacity: "70%",
+                        width: "70px",
+                        height: "70px",
+                        [theme.breakpoints.down("lg")]: {
+                          width: "60px",
+                          height: "60px",
+                        },
+                        [theme.breakpoints.down("md")]: {
+                          width: "50px",
+                          height: "50px",
+                        },
+                        [theme.breakpoints.down("sm")]: {
+                          width: "40px",
+                          height: "40px",
+                        },
+                        [theme.breakpoints.down("xs")]: {
+                          width: "30px",
+                          height: "30px",
+                        },
+                        [theme.breakpoints.up(xxl)]: {
+                          width: "90px",
+                          height: "90px",
+                        },
+                      }}
+                    >
+                      <img
+                        style={{
+                          position: "relative",
+                          left: "50%",
+                          transform: "translate(-50%,0)",
+                          width: "90%",
+                          height: "90%",
+                        }}
+                        src={item.src}
+                        alt={item.name}
+                      ></img>
+                    </Box>
+                  </Tilt>
+                  <Tooltip
+                    style={{
+                      zIndex: 1000000000,
+                      fontSize: 16,
+                      color: theme.palette.text.secondary,
+                      opacity: 100,
+                      maxWidth: "350px",
+                    }}
+                    classNameArrow="bottom"
+                    id={item.name}
+                  />
+                </>
+              );
+            })}
           </Box>
-        )})} */}
+        </Box>
       </Box>
     </Box>
   );
