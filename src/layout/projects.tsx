@@ -17,7 +17,7 @@ import shipsPic from "../assets/projectsPictures/ships.png";
 import { ProjectLinks } from "../components/projectLinks";
 import { Tab } from "../components/tab";
 
-export const Projects = () => {
+export const Projects: React.FC = () => {
   const theme = useTheme();
   const xxl = "xxl" as Breakpoint;
 

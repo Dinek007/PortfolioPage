@@ -7,7 +7,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import LaunchIcon from "@mui/icons-material/Launch";
 
-export const Contact = () => {
+export const Contact: React.FC = () => {
   const theme = useTheme();
   const xxl = "xxl" as Breakpoint;
 

@@ -3,7 +3,7 @@ import { HeaderSections } from "../constants/text";
 import { Button, Typography, useTheme } from "@mui/material";
 import { Link } from "react-scroll";
 
-export const Header = () => {
+export const Header: React.FC = () => {
   const sectionsNames: HeaderSections[] = [
     HeaderSections.AboutMe,
     HeaderSections.Expirience,
@@ -27,7 +27,7 @@ export const Header = () => {
         alignItems: "center",
         justifyContent: "space-between",
         flexWrap: "no-wrap",
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down("sm")]: {
           flexWrap: "wrap",
           height: "120px",
         },
@@ -36,10 +36,9 @@ export const Header = () => {
       <Box
         sx={{
           marginLeft: "5%",
-          [theme.breakpoints.down('sm')]: {
+          [theme.breakpoints.down("sm")]: {
             width: "100%",
-            textAlign: "center"
-
+            textAlign: "center",
           },
         }}
       >
@@ -50,7 +49,7 @@ export const Header = () => {
         sx={{
           marginRight: "5%",
           display: "flex",
-          [theme.breakpoints.down('sm')]: {
+          [theme.breakpoints.down("sm")]: {
             flexWrap: "wrap",
           },
         }}
@@ -59,8 +58,10 @@ export const Header = () => {
           return (
             <Box key={item}>
               <Button>
-                <Link to={item} smooth={true} >
-                  <Typography color={theme.palette.text.secondary} variant="h5">{item}</Typography>
+                <Link to={item} smooth={true}>
+                  <Typography color={theme.palette.text.secondary} variant="h5">
+                    {item}
+                  </Typography>
                 </Link>
               </Button>
             </Box>

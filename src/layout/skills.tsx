@@ -21,7 +21,7 @@ import tsPic from "../assets/skillsTextures/ts.png";
 import reduxPic from "../assets/skillsTextures/redux.png";
 import { isMobile } from "react-device-detect";
 
-export const Skills = () => {
+export const Skills: React.FC = () => {
   const theme = useTheme();
   const xxl = "xxl" as Breakpoint;
 

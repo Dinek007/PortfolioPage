@@ -2,7 +2,7 @@ import { Typography, useTheme } from "@mui/material";
 import { Box, Breakpoint } from "@mui/system";
 import { PlanetScene } from "../three/planet/planetScene";
 
-export const AboutMe = () => {
+export const AboutMe: React.FC = () => {
   const theme = useTheme();
   const xxl = "xxl" as Breakpoint;
 

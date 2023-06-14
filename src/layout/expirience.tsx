@@ -12,7 +12,7 @@ import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import { Tab } from "../components/tab";
 
-export const Expirience = () => {
+export const Expirience: React.FC = () => {
   const theme = useTheme();
   const xxl = "xxl" as Breakpoint;
 
@@ -92,6 +92,7 @@ export const Expirience = () => {
           return (
             <motion.div style={{ opacity: scrollYProgress }} key={item.name}>
               <Box
+                ref={ref}
                 sx={{
                   display: "flex",
                   flexDirection: "row",
