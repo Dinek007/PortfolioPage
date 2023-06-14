@@ -11,6 +11,8 @@ export const ProjectLinks = ({name}) => {
         return name === item.name
   })
 
+  if (!links) return;
+
   return (
     <Box
     sx={{

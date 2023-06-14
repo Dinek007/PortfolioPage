@@ -15,6 +15,7 @@ import quietPic from "../assets/projectsPictures/quiet.png";
 import shipsPic from "../assets/projectsPictures/ships.png";
 
 import { ProjectLinks } from "../components/projectLinks";
+import { Tab } from "../components/tab";
 
 export const Projects = () => {
   const theme = useTheme();
@@ -98,62 +99,31 @@ export const Projects = () => {
       >
         {projectsNamesArray.map((item) => {
           return (
-            <Tilt key={item.name}>
-              <Box
-                sx={{
-                  position: "relative",
-                  display: "flex",
-                  flexDirection: "column",
-                  padding: "20px",
-                  width: "450px",
-                  id: { item },
-                  margin: "50px",
-                  backgroundColor: "rgb(10,10,10)",
-                  borderRadius: "5px",
-                  boxShadow: `-1px -1px 4px 1px ${theme.palette.background.paper}, 1px 1px 4px 1px #007733`,
-                  [theme.breakpoints.down("sm")]: {
-                    width: "350px",
-                  },
-                  [theme.breakpoints.down("xs")]: {
-                    width: "300px",
-                  },
-                  [theme.breakpoints.up(xxl)]: {
-                    width: "550px",
-                  },
-                }}
-              >
-                <Box>
-                  <Typography variant="h3" color={theme.palette.text.secondary}>
-                    {item.name}
-                  </Typography>
-
-                  <ProjectLinks name={item.name} />
-                </Box>
-                <Box
-                  sx={{
-                    paddingBottom: "5px",
-                    marginBottom: "20px",
-                  }}
-                >
-                  <Typography variant="h6" color={"#aaffaa"}>
-                    {item.technologies}
-                  </Typography>
-                </Box>
-                <img
-                  style={{
-                    float: "left",
-                    borderRadius: "15px",
-                    marginBottom: "15px",
-                  }}
-                  src={item.src}
-                  alt={item.name}
-                />
-
-                <Box>
-                  <Typography variant="h6"> {item.description} </Typography>
-                </Box>
-              </Box>
-            </Tilt>
+            <Box
+              sx={{
+                width: "450px",
+                margin: "50px",
+                [theme.breakpoints.down("sm")]: {
+                  width: "350px",
+                },
+                [theme.breakpoints.down("xs")]: {
+                  width: "300px",
+                },
+                [theme.breakpoints.up(xxl)]: {
+                  width: "550px",
+                },
+              }}
+            >
+              <Tab
+                body={item.description}
+                description={item.technologies}
+                name={item.name}
+                key={item.name}
+                imgSource={item.src}
+                isBorder={false}
+                isImage={true}
+              />
+            </Box>
           );
         })}
       </Box>
