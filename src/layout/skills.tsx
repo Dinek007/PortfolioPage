@@ -68,19 +68,19 @@ export const Skills: React.FC = () => {
       title: SkillsNamesTitles.materialUI,
       src: materialUIPic,
     },
-  ];
-
-  const lessSkillsArray = [
     {
-      name: LessSkillsNames.jest,
-      title: LessSkillsNamesTitles.jest,
+      name: SkillsNames.jest,
+      title: SkillsNamesTitles.jest,
       src: jestPic,
     },
     {
-      name: LessSkillsNames.reactTestingLibrary,
-      title: LessSkillsNamesTitles.reactTestingLibrary,
+      name: SkillsNames.reactTestingLibrary,
+      title: SkillsNamesTitles.reactTestingLibrary,
       src: reactTestingLibraryPic,
     },
+  ];
+
+  const lessSkillsArray = [
     {
       name: LessSkillsNames.chatGPT,
       title: LessSkillsNamesTitles.chatGPT,
@@ -169,8 +169,8 @@ export const Skills: React.FC = () => {
                 data-tooltip-content={item.title}
                 data-tooltip-variant="dark"
                 sx={{
-                  width: "270px",
-                  height: "270px",
+                  width: "240px",
+                  height: "240px",
                   [theme.breakpoints.down("lg")]: {
                     width: "220px",
                     height: "220px",

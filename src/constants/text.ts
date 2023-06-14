@@ -47,6 +47,8 @@ export const enum SkillsNames {
   css = "css",
   git = "git",
   electron = "electron",
+  reactTestingLibrary = "reactTestingLibrary",
+  jest = "jest",
 }
 
 export const enum LessSkillsNames {
@@ -55,8 +57,6 @@ export const enum LessSkillsNames {
   libp2p = "libp2p",
   swagger = "swagger",
   chatGPT = "chatGPT",
-  reactTestingLibrary = "reactTestingLibrary",
-  jest = "jest",
   cpp = "cpp",
 }
 
@@ -73,6 +73,8 @@ export const enum SkillsNamesTitles {
   css = "CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation and formatting of HTML documents, allowing developers to control the visual appearance of web pages.",
   git = "Git is a distributed version control system used for tracking changes in source code during software development, enabling collaboration among developers and facilitating code management.",
   electron = "Electron is a framework for building cross-platform desktop applications using web technologies like HTML, CSS, and JavaScript, allowing developers to create desktop apps using familiar web development tools.",
+  reactTestingLibrary = "React Testing Library is a JavaScript testing utility specifically designed for testing React components, facilitating the writing of accessible and maintainable tests that simulate user interactions and verify component behavior.",
+  jest = "Jest is a JavaScript testing framework commonly used for unit testing, providing a simple and intuitive API to write tests, assert expectations, and run test suites efficiently.",
 }
 
 export const enum LessSkillsNamesTitles {
@@ -81,8 +83,6 @@ export const enum LessSkillsNamesTitles {
   libp2p = "Libp2p is a modular networking stack that enables peer-to-peer communication, providing a flexible and extensible foundation for building decentralized applications and protocols.",
   swagger = "Swagger, now known as the OpenAPI Specification, is a widely-used framework for designing, building, and documenting RESTful APIs, allowing developers to describe and interact with APIs in a standardized way.",
   chatGPT = "ChatGPT is an AI language model developed by OpenAI, designed to generate human-like responses in natural language conversations, making it useful for building chatbots, virtual assistants, and other interactive applications.",
-  reactTestingLibrary = "React Testing Library is a JavaScript testing utility specifically designed for testing React components, facilitating the writing of accessible and maintainable tests that simulate user interactions and verify component behavior.",
-  jest = "Jest is a JavaScript testing framework commonly used for unit testing, providing a simple and intuitive API to write tests, assert expectations, and run test suites efficiently.",
   cpp = "C++ is a general-purpose programming language known for its efficiency and performance, widely used for developing high-performance software, system-level programming, and resource-constrained applications.",
 }
 

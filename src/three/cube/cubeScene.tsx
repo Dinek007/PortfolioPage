@@ -8,7 +8,7 @@ export const CubeScene: React.FC<{ src: string }> = ({ src }) => {
   return (
     <Canvas>
       <ambientLight intensity={0.4} />
-      <pointLight position={[0, 0, 2]} intensity={0.45} />
+      <pointLight position={[0, 0, 2]} intensity={0.35} />
       <CustomOrbitControls />
       {/* <axesHelper scale={3}/> */}
       <Float speed={1} rotationIntensity={2} floatIntensity={1}>
