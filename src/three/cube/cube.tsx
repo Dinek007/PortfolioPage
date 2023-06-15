@@ -16,7 +16,7 @@ export const Cube: React.FC<{
 
   useFrame(() => {
     if (isHovered) {
-      cubeRef.current.rotation.y += 0.012; // Szybkość obrotu, gdy mysz nie jest najechana
+      cubeRef.current.rotation.y += 0.5; // Szybkość obrotu, gdy mysz nie jest najechana
     }
   });
 
