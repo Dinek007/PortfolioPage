@@ -276,7 +276,7 @@ export const Skills: React.FC = () => {
                       data-tooltip-content={item.title}
                       data-tooltip-variant="dark"
                       sx={{
-                        opacity: "80%",
+                        opacity: "70%",
                         width: "70px",
                         height: "70px",
                         [theme.breakpoints.down("lg")]: {

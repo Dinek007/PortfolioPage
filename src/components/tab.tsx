@@ -61,6 +61,7 @@ export const Tab: React.FC<{
         {isImage && (
           <img
             style={{
+              opacity: "82%",
               float: "left",
               borderRadius: "15px",
               marginBottom: "15px",
