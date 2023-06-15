@@ -218,7 +218,7 @@ export const Skills: React.FC = () => {
                     opacity: 100,
                     maxWidth: "350px",
                     backgroundColor: "#121212",
-                    boxShadow: `0px 0px 100px 0px #aa77aa`,
+                    boxShadow: `0px 0px 200px 0px #aa77aa`,
                     fontFamily: Sunset,
                     borderRadius: "12px",
                     padding: "20px",
