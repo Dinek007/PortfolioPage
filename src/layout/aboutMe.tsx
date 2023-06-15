@@ -26,8 +26,8 @@ export const AboutMe: React.FC = () => {
           width: "55vw",
           padding: "30px",
           backgroundColor: "rgb(10,10,10)",
-          borderRadius: "5px",
-          boxShadow: `0px 0px 8px 2px ${theme.palette.background.paper}`,
+          borderRadius: "10px",
+          boxShadow: `0px 0px 10px 2px ${theme.palette.background.paper}`,
           zIndex: 1000,
           minWidth: "50vw",
           [theme.breakpoints.down("md")]: {

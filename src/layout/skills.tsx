@@ -30,6 +30,7 @@ import netlifyPic from "../assets/skillsTextures/netlify.png";
 import reactTestingLibraryPic from "../assets/skillsTextures/reactTestingLibrary.png";
 import swaggerPic from "../assets/skillsTextures/swagger.png";
 import { Tilt } from "react-tilt";
+import Sunset from "../fonts/Sunset.ttf";
 
 export const Skills: React.FC = () => {
   const theme = useTheme();
@@ -213,9 +214,14 @@ export const Skills: React.FC = () => {
                   style={{
                     zIndex: 1000000000,
                     fontSize: 16,
-                    color: theme.palette.text.secondary,
+                    color: "#ffbbff",
                     opacity: 100,
                     maxWidth: "350px",
+                    backgroundColor: "#121212",
+                    boxShadow: `0px 0px 100px 0px #aa77aa`,
+                    fontFamily: Sunset,
+                    borderRadius: "12px",
+                    padding: "20px",
                   }}
                   classNameArrow="bottom"
                   id={item.name}
@@ -312,9 +318,14 @@ export const Skills: React.FC = () => {
                     style={{
                       zIndex: 1000000000,
                       fontSize: 16,
-                      color: theme.palette.text.secondary,
+                      color: "#ffbbff",
                       opacity: 100,
                       maxWidth: "350px",
+                      backgroundColor: "#121212",
+                      boxShadow: `0px 0px 15px 5px #aa77aa`,
+                      fontFamily: Sunset,
+                      borderRadius: "12px",
+                      padding: "20px",
                     }}
                     classNameArrow="bottom"
                     id={item.name}
