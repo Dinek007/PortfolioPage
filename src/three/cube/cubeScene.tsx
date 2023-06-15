@@ -7,11 +7,11 @@ import { Cube } from "./cube";
 export const CubeScene: React.FC<{ src: string }> = ({ src }) => {
   return (
     <Canvas>
-      <ambientLight intensity={0.4} />
-      <pointLight position={[0, 0, 2]} intensity={0.35} />
+      <ambientLight intensity={0.35} />
+      <pointLight position={[0, 0, 3]} intensity={0.25} />
       <CustomOrbitControls />
       {/* <axesHelper scale={3}/> */}
-      <Float speed={1} rotationIntensity={2} floatIntensity={1}>
+      <Float speed={1} rotationIntensity={1.5} floatIntensity={0}>
         <Cube src={src} />
       </Float>
     </Canvas>
