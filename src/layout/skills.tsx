@@ -254,7 +254,7 @@ export const Skills: React.FC = () => {
             },
           }}
         >
-          <Typography color={"#aaaaaa"} variant="h3">
+          <Typography color={"#cccccc"} variant="h3">
             Less Skills
           </Typography>
           <Box
@@ -276,7 +276,7 @@ export const Skills: React.FC = () => {
                       data-tooltip-content={item.title}
                       data-tooltip-variant="dark"
                       sx={{
-                        opacity: "70%",
+                        opacity: "80%",
                         width: "70px",
                         height: "70px",
                         [theme.breakpoints.down("lg")]: {
