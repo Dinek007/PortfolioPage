@@ -255,7 +255,7 @@ export const Skills: React.FC = () => {
           }}
         >
           <Typography color={"#cccccc"} variant="h3">
-            Stara Fifiego{" "}
+            Lesser known skills
           </Typography>
           <Box
             sx={{
