@@ -1,7 +1,7 @@
 import { Typography, useTheme } from "@mui/material";
 import { Box, Breakpoint } from "@mui/system";
 import { ProjectLinks } from "./projectLinks";
-import { Tilt } from "react-tilt";
+import Tilt from "react-parallax-tilt";
 
 export const Tab: React.FC<{
   name: string;

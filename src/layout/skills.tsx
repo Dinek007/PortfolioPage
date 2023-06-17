@@ -29,7 +29,7 @@ import libp2pPic from "../assets/skillsTextures/libp2p.png";
 import netlifyPic from "../assets/skillsTextures/netlify.png";
 import reactTestingLibraryPic from "../assets/skillsTextures/reactTestingLibrary.png";
 import swaggerPic from "../assets/skillsTextures/swagger.png";
-import { Tilt } from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import Sunset from "../fonts/Sunset.ttf";
 
 export const Skills: React.FC = () => {
