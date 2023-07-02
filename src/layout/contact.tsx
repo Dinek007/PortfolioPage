@@ -62,7 +62,7 @@ export const Contact: React.FC = () => {
           height: "650px",
           backgroundColor: "rgb(10,10,10)",
           borderRadius: "5px",
-          boxShadow: `-1px -1px 4px 1px ${theme.palette.background.paper}, 1px 1px 4px 1px #007733`,
+          boxShadow: `-1px -1px 4px 1px ${theme.palette.background.paper}, 1px 1px 4px 1px #4EE000`,
           [theme.breakpoints.down("md")]: {
             width: "500px",
             height: "550px",
@@ -123,7 +123,7 @@ export const Contact: React.FC = () => {
                       left: "10px",
                       top: "2px",
                       fontSize: "20px",
-                      color: "#aaffaa",
+                      color: "#9CE077",
                     }}
                   />
                 </a>

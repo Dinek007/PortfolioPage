@@ -25,7 +25,7 @@ export const Tab: React.FC<{
           id: name,
           backgroundColor: "rgb(10,10,10)",
           borderRadius: "5px",
-          boxShadow: `-2px -2px 6px 1px ${theme.palette.background.paper}, 2px 2px 6px 1px #007733`,
+          boxShadow: `-1px -1px 4px 1px ${theme.palette.background.paper}, 1px 1px 4px 1px #4EE000`,
         }}
       >
         {name && (
@@ -51,7 +51,7 @@ export const Tab: React.FC<{
                 borderBottom: isBorder && `1px solid #ff99ff`,
               }}
               variant="h6"
-              color={"#aaffaa"}
+              color={"#9CE077"}
             >
               {description}
             </Typography>
