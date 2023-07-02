@@ -7,7 +7,6 @@ import {
   ExpirienceBody,
 } from "../constants/text";
 import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
-import { Tilt } from "react-tilt";
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import { Tab } from "../components/tab";

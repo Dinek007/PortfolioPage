@@ -5,7 +5,6 @@ import {
   projectsNames,
   projectsTechnologies,
 } from "../constants/text";
-import { Tilt } from "react-tilt";
 
 import portfolioPic from "../assets/projectsPictures/portfolio.png";
 import worldOfNotesPic from "../assets/projectsPictures/worldOfNotes.png";
